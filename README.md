@@ -16,11 +16,11 @@ A glyph appended to a table, image or non-text-based work doesn't make much sens
 
 1. Link to jQuery:
 
-        &lt;script type="text/javascript" src="/path/to/jquery.min.js"&gt;&lt;/script&gt;
+        <script type="text/javascript" src="/path/to/jquery.min.js"></script>
 
 2. Link to the plugin:
 
-        &lt;script type="text/javascript" src="/path/to/jquery.glyph.min.js"&gt;&lt;/script&gt;
+        <script type="text/javascript" src="/path/to/jquery.glyph.min.js"></script>
 
 3. Call the plugin in your jQuery code:
 

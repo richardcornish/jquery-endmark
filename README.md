@@ -16,40 +16,40 @@ A glyph appended to a table, image or non-text-based work doesn't make much sens
 
 1. Link to jQuery:
 
-    <script type="text/javascript" src="/path/to/jquery.min.js"></script>
+        &lt;script type="text/javascript" src="/path/to/jquery.min.js"&gt;&lt;/script&gt;
 
 2. Link to the plugin:
 
-    <script type="text/javascript" src="/path/to/jquery.glyph.min.js"></script>
+        &lt;script type="text/javascript" src="/path/to/jquery.glyph.min.js"&gt;&lt;/script&gt;
 
 3. Call the plugin in your jQuery code:
 
-    $(document).ready(function(){
-        $('.article').glyph();
-    });
+        $(document).ready(function(){
+            $('.article').glyph();
+        });
 
 ## Options
 
 The plugin comes with reasonable default options: A black square of 100% size with a left padding of five pixels is appended to the end. Feel free to customize it with these options:
 
-- `entity`: Any [HTML entity](http://www.fileformat.info/info/unicode/char/search.htm) of your choosing instead of the square
-- `color`: Any CSS color of your choosing instead of black.</li>
-- `size`: Any CSS font size of your choosing instead of 100%.</li>
-- `position`: Any CSS positioning instead of relative.</li>
-- `left`: Any CSS left positioning of your choosing instead of five pixels.</li>
-- `top`: Any CSS top positioning of your choosing instead of zero pixels.</li>
-- `lineheight`: Any CSS line height instead of zero, which neutralizes gaps in between lines of text.</li>
-- `align`: Any CSS vertical alignment of your choosing instead of top (only works if using images, i.e. `favicon` or `domain`).</li>
-- `favicon`: The URL of an image. Uses a simple `<img />` element. You can link to the favicon (`.ico`) of your site, but this approach isn't recommended because Internet Explorer doesn't display images whose source files are `.ico`; see `domain`.</li>
-- `domain: The URL of a website whose favicon you want to use. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL.
+- `entity`: Any [HTML entity](http://www.fileformat.info/info/unicode/char/search.htm) of your choosing instead of the square.
+- `color`: Any CSS color of your choosing instead of black.
+- `size`: Any CSS font size of your choosing instead of 100%.
+- `position`: Any CSS positioning instead of relative.
+- `left`: Any CSS left positioning of your choosing instead of five pixels.
+- `top`: Any CSS top positioning of your choosing instead of zero pixels.
+- `lineheight`: Any CSS line height instead of zero, which neutralizes gaps in between lines of text.
+- `align`: Any CSS vertical alignment of your choosing instead of top (only works if using images, i.e. `favicon` or `domain`).
+- `favicon`: The URL of an image. Uses a simple `<img />` element. You can link to the favicon (`.ico`) of your site, but this approach isn't recommended because Internet Explorer doesn't display images whose source files are `.ico`; see `domain`.
+- `domain`: The URL of a website whose favicon you want to use. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL.
 
-Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," any othe protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
+Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
 
-The glyph is wrapped in a `<span class="glyph"></span>`. The glyph class is for your custom CSS style. Note that previous versions of the plugin added the glyph class to the image without a `<span>`; now the glyph&#8212;regardless of being an entity or image or favicon&#8212;is wrapped in the `<span>`.
+The glyph is wrapped in a `<span class="glyph"></span>`. The glyph class is for your custom CSS style. Note that previous versions of the plugin added the glyph class to the image without a `<span>`; now the glyph&#8212;regardless of being an entity, image, or favicon&#8212;is wrapped in the `<span>`.
 
 ## Examples
 
-Please see [the demo](demo.html) to see these examples in action.
+Please see the demo to see these examples in action.
 
 An example with no customization (a black square):
 

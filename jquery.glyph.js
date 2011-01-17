@@ -55,7 +55,7 @@
             
             $($('*', this).get().reverse()).each(function(){
                 if ($(this).is('p') || $(this).is('li') || $(this).is('dd')) {
-                    $(this).append(html);
+                    $(this).append('&nbsp;' + html);
                     return false;
                 }
             });

@@ -13,9 +13,12 @@
  *   * http://www.opensource.org/licenses/mit-license.php
  */
  
-(function($){
-    $.fn.glyph = function(options) {
-        
+(function ($) {
+    
+    'use strict';
+    
+    $.fn.glyph = function (options) {
+
         var defaults = {
             entity: '&#9632;',
             color: '#000',
@@ -27,33 +30,33 @@
             position: 'relative',
             favicon: false,
             domain: false
-        };
+        }, options_extended = $.extend(defaults, options);
         
-        var options = $.extend(defaults, options);
-        
-        return this.each(function(){
+        return this.each(function () {
 
-            if (options.favicon || options.domain) {
-                var image = $(new Image());
-                image.css({ verticalAlign: options.align });
+            var glyph, image = new Image(), url = 'http://www.google.com/s2/favicons?domain=', html;
 
-                if (options.domain) {
-                    var url = 'http://www.google.com/s2/favicons?domain=' + options.domain.replace(/((\w)*:\/\/)?/gi, '').replace(/\//gi, '');
-                    image.attr('src', url);
+            if (options_extended.favicon || options_extended.domain) {
+                
+                $(image).css({ verticalAlign: options_extended.align });
+
+                if (options_extended.domain) {
+                    url += options_extended.domain.replace(/((\w)*:\/\/)?/gi, '').replace(/\//gi, '');
+                    $(image).attr('src', url);
                 } else {
-                    image.attr('src', options.favicon);
+                    $(image).attr('src', options_extended.favicon);
                 }
                 
-                var glyph = image;
+                glyph = $(image);
                 
             } else {
-                glyph = options.entity;
+                glyph = options_extended.entity;
             }
 
-            var html = $(document.createElement('span')).html(glyph);
-            html.css({ color: options.color, fontSize: options.size, left: options.left, top: options.top, lineHeight: options.lineheight, position: options.position }).addClass('glyph');
+            html = $(window.document.createElement('span')).html(glyph);
+            html.css({ color: options_extended.color, fontSize: options_extended.size, left: options_extended.left, top: options_extended.top, lineHeight: options_extended.lineheight, position: options_extended.position }).addClass('glyph');
             
-            $($('*', this).get().reverse()).each(function(){
+            $($('*', this).get().reverse()).each(function () {
                 if ($(this).is('p') || $(this).is('li') || $(this).is('dd')) {
                     $(this).append('&nbsp;' + html);
                     return false;
@@ -63,4 +66,4 @@
         });
 
     };
-})(jQuery);
+}(jQuery));

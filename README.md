@@ -57,9 +57,9 @@ An example with a red snowman:
 
     $('.article').glyph({ entity: '&#9731;', color: '#f00' });
 
-An example with Barack Obama's favicon:
+An example with Apple's favicon:
 
-    $('.article').glyph({ domain: 'barackobama.com' });
+    $('.article').glyph({ domain: 'apple.com' });
 
 An example with the White House's favicon (the `favicon` method isn't recommended; see earlier notes):
 

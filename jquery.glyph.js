@@ -53,7 +53,7 @@
                 glyph = options_extended.entity;
             }
 
-            html = $('<span />').addClass('glyph').css({ color: options_extended.color, fontSize: options_extended.size, left: options_extended.left, top: options_extended.top, lineHeight: options_extended.lineheight, position: options_extended.position }).append(glyph);
+            html = $('<span />').addClass('glyph').css({ color: options_extended.color, fontSize: options_extended.size, left: options_extended.left, top: options_extended.top, lineHeight: options_extended.lineheight, position: options_extended.position, fontStyle: 'normal', fontWeight: 'normal' }).append(glyph);
 
             $($('*', this).get().reverse()).each(function () {
                 if ($(this).is('p') || $(this).is('li') || $(this).is('dd')) {

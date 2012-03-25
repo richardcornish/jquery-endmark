@@ -2,18 +2,8 @@
 
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>jQuery Glyph demo</title>    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.glyph.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('#demo-1').glyph();
-        $('#demo-2').glyph({ entity: '&#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
-        $('#demo-3').glyph({ domain: 'apple.com' });
-        $('#demo-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });        
-    });
-    </script>
+    <meta charset="utf-8">
+    <title>jQuery Glyph demo</title>
 </head>
 
 <body>
@@ -71,6 +61,17 @@ $(document).ready(function(){
       <li><em><a href="#">Redhead</a></em></li>
     </ul>
 </div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.glyph.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#demo-1').glyph();
+    $('#demo-2').glyph({ entity: '&#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
+    $('#demo-3').glyph({ domain: 'apple.com' });
+    $('#demo-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });        
+});
+</script>
 
 </body>
 </html>

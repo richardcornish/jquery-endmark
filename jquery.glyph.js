@@ -1,16 +1,12 @@
 /**
- * jQuery Glyph http://www.richardcornish.com/projects/glyph/
+ * jQuery Glyph  https://github.com/richardcornish/jQuery-Glyph
  *
- * @author              Richard Cornish <http://www.richardcornish.com/>
- * @version             2.0
- * @projectDescription  Adds a magazine-like glyph character to the last paragraph or list item child of any selector
+ * @author       Richard Cornish <http://richardcornish.com>
+ * @version      2.0
+ * @description  Adds a magazine-like glyph character to the last paragraph or list item child of any selector
  *
- * Built on the shoulders of giants:
- *   * John Resig      - http://jquery.com/
- *
- *
- * Copyright (c) 2010 Richard Cornish, licensed under the MIT License:
- *   * http://www.opensource.org/licenses/mit-license.php
+ *  (c) 2012 Richard Cornish, licensed under the MIT License:
+ *  http://www.opensource.org/licenses/mit-license.php
  */
 
 (function ($) {

@@ -13,9 +13,11 @@
 
     'use strict';
 
-    $.fn.glyph = function (options) {
+    $.fn.glyph = function (user_options) {
 
-        var defaults = {
+        var defaults, options;
+
+        defaults = {
             entity: '&#9632;',
             color: '#000',
             size: '100%',
@@ -26,7 +28,9 @@
             position: 'relative',
             favicon: false,
             domain: false
-        }, options_extended = $.extend(defaults, options);
+        }
+        
+        options = $.extend(defaults, user_options);
 
         return this.each(function () {
 

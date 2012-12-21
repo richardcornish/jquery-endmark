@@ -34,7 +34,10 @@
 
         return this.each(function () {
 
-            var glyph, image = new Image(), url = 'http://www.google.com/s2/favicons?domain=', html;
+            var glyph, image, url, html;
+
+            image = new Image();
+            url = 'http://www.google.com/s2/favicons?domain=';
 
             if (options_extended.favicon || options_extended.domain) {
 

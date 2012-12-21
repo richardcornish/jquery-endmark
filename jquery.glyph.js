@@ -28,8 +28,8 @@
             position: 'relative',
             favicon: false,
             domain: false
-        }
-        
+        };
+
         options = $.extend(defaults, user_options);
 
         return this.each(function () {
@@ -39,25 +39,31 @@
             image = new Image();
             url = 'http://www.google.com/s2/favicons?domain=';
 
-            if (options_extended.favicon || options_extended.domain) {
+            if (options.favicon || options.domain) {
 
-                $(image).css({ verticalAlign: options_extended.align });
+                // If favicon or domain options are set, use an image
+                $(image).css({ verticalAlign: options.align });
 
-                if (options_extended.domain) {
-                    url += options_extended.domain.replace(/((\w)*:\/\/)?/gi, '').replace(/\//gi, '');
+                if (options.domain) {
+                    url += options.domain.replace(/((\w)*:\/\/)?/gi, '').replace(/\//gi, '');
                     $(image).attr('src', url);
                 } else {
-                    $(image).attr('src', options_extended.favicon);
+                    $(image).attr('src', options.favicon);
                 }
 
                 glyph = $(image)[0];
 
             } else {
-                glyph = options_extended.entity;
+
+                // Otherwise use the HTML entity
+                glyph = options.entity;
+
             }
 
-            html = $('<span />').addClass('glyph').css({ color: options_extended.color, fontSize: options_extended.size, left: options_extended.left, top: options_extended.top, lineHeight: options_extended.lineheight, position: options_extended.position, fontStyle: 'normal', fontWeight: 'normal' }).append(glyph);
+            // Assemble HTML of glyph
+            html = $('<span />').addClass('glyph').css({ color: options.color, fontSize: options.size, left: options.left, top: options.top, lineHeight: options.lineheight, position: options.position, fontStyle: 'normal', fontWeight: 'normal' }).append(glyph);
 
+            // Loop through the DOM and insert glyph at the end
             $($('*', this).get().reverse()).each(function () {
                 if ($(this).is('p') || $(this).is('li') || $(this).is('dd')) {
                     $(this).append('&nbsp;').append(html[0]);

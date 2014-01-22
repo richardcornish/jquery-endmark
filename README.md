@@ -44,21 +44,17 @@ Please see the demo to see these examples in action.
     // Demo 1: Default entity (a black square)
     $('.article-1').glyph();
 
-    // Demo 2: First 10 words (a red snowman)
-    $('.article-2').glyph({entity: '&#9731;', color: '#f00'});
+    // Demo 2: A red snowman
+    $('.article-2').glyph({ entity: '&#9731;', color: '#f00' });
 
     // Demo 3: Apple favicon
-    $('.article-3').glyph({domain: 'apple.com'});
+    $('.article-3').glyph({ domain: 'apple.com' });
 
     // Demo 4: White House favicon
-    $('.article-4').glyph({favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'});
+    $('.article-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });
 
 ## What it won't do
 
 Glyphs are only appropriate at the end of text-based works, and thus this plugin will look for the last paragraph. If the work ends in an unordered list, ordered list or definition list, the plugin will look for the last element node in that list, which will either be a list item or definition description, and append the glyph to that item. If lists are nested, the plugin will still find the last list item or definition description in the nested lists.
 
 A glyph appended to a table, image or non-text-based work doesn't make much sense, and so this plugin won't insert the glyph on elements that aren't paragraphs, list items or definition descriptions.
-
-## Feature requests, bug reports, adoration, etc.
-
-[File an issue](https://github.com/richardcornish/jQuery-Glyph/issues) or just e-mail me at [rich@richardcornish.com](mailto:rich@richardcornish.com).

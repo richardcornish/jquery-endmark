@@ -1,6 +1,6 @@
 # jQuery Glyph
 
-**jQuery Glyph** is a jQuery plugin that inserts a decorative symbol to the last paragraph or list item of a block of text, which creating a professional appearance like those in magazines and newspapers.
+**jQuery Glyph** is a jQuery plugin that appends a decorative symbol to the last paragraph or list item of a block of text, creating a professional appearance like those in magazines and newspapers.
 
 A lot of CMSs are ill-equipped to handle the task, and rightfully so. The glyph is decorative and should not be inserted into the original text. This makes it a perfect case for a JavaScript DOM insertion.
 
@@ -17,7 +17,7 @@ A lot of CMSs are ill-equipped to handle the task, and rightfully so. The glyph 
 3. Call the plugin in your jQuery code:
 
         $(document).ready(function(){
-            $('.article').glyph();
+            $('article').glyph();
         });
 
 ## Options
@@ -42,23 +42,16 @@ The glyph is wrapped in a `<span class="glyph" />`. The glyph class is for your 
 Please see the demo to see these examples in action.
 
     // Demo 1: Default entity (a black square)
-    $('.article').glyph();
+    $('.article-1').glyph();
 
     // Demo 2: First 10 words (a red snowman)
-    $('.article').glyph({
-        entity: '&#9731;',
-        color: '#f00'
-    });
+    $('.article-2').glyph({entity: '&#9731;', color: '#f00'});
 
     // Demo 3: Apple favicon
-    $('.article').glyph({
-        domain: 'apple.com'
-    });
+    $('.article-3').glyph({domain: 'apple.com'});
 
     // Demo 4: White House favicon
-    $('.article').glyph({
-        favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'
-    });
+    $('.article-4').glyph({favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'});
 
 ## What it won't do
 

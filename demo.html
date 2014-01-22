@@ -27,23 +27,13 @@ $(document).ready(function(){
     $('.article-1').glyph();
     
     // Demo 2: Red snowman
-    $('.article-2').glyph({
-        entity: '&amp;#9731;',
-        color: '#f00',
-        size: '200%',
-        left: '0',
-        top: '17px'
-    });
+    $('.article-2').glyph({ entity: '&amp;#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
     
     // Demo 3: Apple favicon
-    $('.article-3').glyph({
-        domain: 'apple.com'
-    });
+    $('.article-3').glyph({ domain: 'apple.com' });
     
     // Demo 4: White House favicon
-    $('.article-4').glyph({
-        favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'
-    });
+    $('.article-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });
     
 });
 &lt;/script&gt;</code></pre>
@@ -82,19 +72,9 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
     $('.article-1').glyph();
-    $('.article-2').glyph({
-        entity: '&#9731;',
-        color: '#f00',
-        size: '200%',
-        left: '0',
-        top: '17px'
-    });
-    $('#demo-3').glyph({
-        domain: 'apple.com'
-    });
-    $('#demo-4').glyph({
-        favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'
-    });        
+    $('.article-2').glyph({ entity: '&#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
+    $('.article-3').glyph({ domain: 'apple.com' });
+    $('.article-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });        
 });
 </script>
 

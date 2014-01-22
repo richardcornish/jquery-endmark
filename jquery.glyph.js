@@ -3,9 +3,9 @@
  *
  * @author       Richard Cornish <http://richardcornish.com>
  * @version      2.0
- * @description  Adds a magazine-like glyph character to the last paragraph or list item child of any selector
+ * @description  Appends a decorative symbol to a block of text
  *
- *  (c) 2012 Richard Cornish, licensed under the MIT License:
+ *  (c) Richard Cornish, licensed under the MIT License:
  *  http://www.opensource.org/licenses/mit-license.php
  */
 

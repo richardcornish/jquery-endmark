@@ -35,7 +35,7 @@ The plugin comes with reasonable default options: A black square of 100% size wi
 - `favicon`: The URL of an image. Uses a simple `<img>` element. You can link to the favicon (`.ico`) of your site, but this approach isn't recommended because Internet Explorer doesn't display images whose source files are `.ico`; see `domain`
 - `domain`: The URL of a website whose favicon you want to use. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL. Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
 
-The glyph is wrapped in a `<span class="glyph"></span>`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
+The glyph is wrapped in a `<span class="glyph" />`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
 
 ## Examples
 

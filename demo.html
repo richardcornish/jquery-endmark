@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>jQuery Glyph demo</title>
+    <title>jQuery Glyph demos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -23,53 +24,77 @@
 $(document).ready(function(){
     
     // Demo 1: Default entity
-    $('#demo-1').glyph();
+    $('.article-1').glyph();
     
     // Demo 2: Red snowman
-    $('#demo-2').glyph({ entity: '&amp;#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
+    $('.article-2').glyph({
+        entity: '&amp;#9731;',
+        color: '#f00',
+        size: '200%',
+        left: '0',
+        top: '17px'
+    });
     
     // Demo 3: Apple favicon
-    $('#demo-3').glyph({ domain: 'apple.com' });
+    $('.article-3').glyph({
+        domain: 'apple.com'
+    });
     
     // Demo 4: White House favicon
-    $('#demo-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });
+    $('.article-4').glyph({
+        favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'
+    });
     
 });
 &lt;/script&gt;</code></pre>
 
-<div id="demo-1">
-    <h2>Demo 1: Default entity</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
-</div>
+<h2>Results</h2>
 
-<div id="demo-2">
-    <h2>Demo 2: Red snowman</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
-</div>
+<p><em>Note: Use the inspector to view enhanced source changes</em></p>
 
-<div id="demo-3">
-    <h2>Demo 3: Apple favicon</h2>
+<article class="article-1">
+    <h3>Demo 1: Default entity (a black square)</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
-</div>
+</article>
 
-<div id="demo-4">
-    <h2>Demo 4: White House favicon</h2>
+<article class="article-2">
+    <h3>Demo 2: Red snowman</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
+</article>
+
+<article class="article-3">
+    <h3>Demo 3: Apple favicon</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
+</article>
+
+<article class="article-4">
+    <h3>Demo 4: White House favicon</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo in mi. Donec ut nisi. Quisque metus. Suspendisse semper. Vivamus et nisl. Quisque magna mauris, venenatis in, suscipit nec, vehicula a, arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus tincidunt ultrices nibh. Curabitur metus neque, rhoncus tincidunt, pulvinar eu, consequat et, quam. Sed non ipsum. Vestibulum pede sapien, hendrerit sed, blandit ut, venenatis ac, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in mi.</p>
     <ul>
       <li><em>Blonde</em></li>
       <li><a href="#">Brunette</a></li>
       <li><em><a href="#">Redhead</a></em></li>
     </ul>
-</div>
+</article>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="jquery.glyph.min.js"></script>
 <script>
 $(document).ready(function(){
-    $('#demo-1').glyph();
-    $('#demo-2').glyph({ entity: '&#9731;', color: '#f00', size: '200%', left: '0', top: '17px' });
-    $('#demo-3').glyph({ domain: 'apple.com' });
-    $('#demo-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });        
+    $('.article-1').glyph();
+    $('.article-2').glyph({
+        entity: '&#9731;',
+        color: '#f00',
+        size: '200%',
+        left: '0',
+        top: '17px'
+    });
+    $('#demo-3').glyph({
+        domain: 'apple.com'
+    });
+    $('#demo-4').glyph({
+        favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico'
+    });        
 });
 </script>
 

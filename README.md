@@ -1,6 +1,6 @@
 # jQuery Glyph
 
-**jQuery Glyph** is a jQuery plugin that appends a decorative symbol to the last paragraph or list item of a block of text, creating a professional appearance like those in magazines and newspapers.
+**jQuery Glyph** is a jQuery plugin that appends a decorative symbol to the last paragraph or list item of a block of text, creating a professional appearance like those in newspapers and magazines.
 
 A lot of CMSs are ill-equipped to handle the task, and rightfully so. The glyph is decorative and should not be inserted into the original text. This makes it a perfect case for a JavaScript DOM insertion.
 

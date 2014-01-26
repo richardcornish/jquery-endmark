@@ -42,43 +42,43 @@ The plugin comes with reasonable default options: A black square of 100% size wi
 
 - `entity`
 
-    Any [HTML entity](http://www.fileformat.info/info/unicode/char/a.htm) instead of the square
+    Any [HTML entity](http://www.fileformat.info/info/unicode/char/a.htm), default of `'&#9632;'`, a [square](http://www.fileformat.info/info/unicode/char/25a0/index.htm).
 
 - `color`
 
-    Any CSS color instead of black
+    Any CSS color, default of `'#000'`, black
 
 - `size`
 
-    Any CSS font size instead of 100%
+    Any CSS font size, default of `'100%'`
 
 - `position`
 
-    Any CSS positioning instead of relative
+    Any CSS positioning, default of `'relative'`
 
 - `left`
 
-    Any CSS left positioning instead of five pixels
+    Any CSS left positioning, default of `'5px'`
 
 - `top`
 
-    Any CSS top positioning instead of zero pixels
+    Any CSS top positioning, default of `'0'`
 
 - `lineheight`
 
-    Any CSS line height instead of zero, which neutralizes gaps in between lines of text
+    Any CSS line height, default of `'0'`, which neutralizes gaps in between lines of text
 
 - `align`
 
-    Any CSS vertical alignment instead of top (only works if using images, i.e. `favicon` or `domain`)
+    Any CSS vertical alignment, default of `'top'`; only works if using images, i.e. `favicon` or `domain`
 
 - `favicon`
 
-    The URL of an image. Uses a simple `<img>` element. You can link to the favicon (`.ico`) of your site, but this approach isn't recommended because Internet Explorer doesn't display images whose source files are `.ico`; see `domain`
+    The URL of an image, default of `false`. Uses a simple `<img>` element. You can link to the favicon (`.ico`) of your site, but this approach isn't recommended because Internet Explorer doesn't display images whose source files are `.ico`; see `domain`
 
 - `domain`
 
-    The URL of a website whose favicon you want to use. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](https://web.archive.org/web/20080831193809/http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL. Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
+    The URL of a website whose favicon you want to use, default of `false`. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](https://web.archive.org/web/20080831193809/http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL. Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
 
 The glyph is wrapped in a `<span class="glyph" />`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
 

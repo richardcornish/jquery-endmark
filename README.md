@@ -4,6 +4,22 @@
 
 A lot of CMSs are ill-equipped to handle the task, and rightfully so. The glyph is decorative and should not be inserted into the original text. This makes it a perfect case for a JavaScript DOM insertion.
 
+## Demo
+
+[Please see the demo](http://richardcornish.github.io/jQuery-Glyph/) to see these examples in action.
+
+    // Demo 1: Default entity (a black square)
+    $('.article-1').glyph();
+
+    // Demo 2: A red snowman
+    $('.article-2').glyph({ entity: '&#9731;', color: '#f00' });
+
+    // Demo 3: Apple favicon
+    $('.article-3').glyph({ domain: 'apple.com' });
+
+    // Demo 4: White House favicon
+    $('.article-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });
+
 ## Installation
 
 1. Link to jQuery:
@@ -36,22 +52,6 @@ The plugin comes with reasonable default options: A black square of 100% size wi
 - `domain`: The URL of a website whose favicon you want to use. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](https://web.archive.org/web/20080831193809/http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL. Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
 
 The glyph is wrapped in a `<span class="glyph" />`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
-
-## Examples
-
-Please see the demo to see these examples in action.
-
-    // Demo 1: Default entity (a black square)
-    $('.article-1').glyph();
-
-    // Demo 2: A red snowman
-    $('.article-2').glyph({ entity: '&#9731;', color: '#f00' });
-
-    // Demo 3: Apple favicon
-    $('.article-3').glyph({ domain: 'apple.com' });
-
-    // Demo 4: White House favicon
-    $('.article-4').glyph({ favicon: 'http://www.whitehouse.gov/sites/default/themes/whitehouse/favicon.ico' });
 
 ## What it won't do
 

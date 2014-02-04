@@ -2,7 +2,7 @@
 
 **jQuery Glyph** is a jQuery plugin that appends a decorative symbol to the last paragraph or list item of a block of text, creating a professional appearance like those in newspapers and magazines.
 
-A lot of CMSs are ill-equipped to handle the task, and rightfully so. The glyph is decorative and should not be inserted into the original text. This makes it a perfect case for a JavaScript DOM insertion.
+A lot of CMSs are ill equipped to handle the task, and rightfully so. The glyph is decorative and should not be inserted into the original text. This makes it a perfect case for a [JavaScript DOM insertion](http://api.jquery.com/append/).
 
 ## Demo
 
@@ -80,7 +80,7 @@ The plugin comes with reasonable default options: A black square of 100% size wi
 
     The URL of a website whose favicon you want to use, default of `false`. Hopefully this is your own website. :p I recommend using `domain` instead of `favicon` because `domain` takes advantage of [Google's undocumented favicon-to-PNG conversion](https://web.archive.org/web/20080831193809/http://simonwillison.net/2008/Aug/30/favicons/), which means your glyph will appear in Internet Explorer browsers. However, this approach assumes `favicon.ico` is served at the root of the URL. Strictly speaking, the `domain` that Google takes should be in the form of `example.com` or `www.example.com`, but the plugin will strip "http://", "https://," and any other protocol and any trailing slash, so feel free to use whichever. How is that for convenience?
 
-The glyph is wrapped in a `<span class="glyph" />`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
+The glyph is wrapped in a `<span class="glyph"></span>`. The glyph class is for your custom CSS style if you need customization beyond the provided options.
 
 ## What it won't do
 

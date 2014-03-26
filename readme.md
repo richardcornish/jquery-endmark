@@ -6,7 +6,7 @@ A lot of CMSs are ill equipped to handle the task, and rightfully so. The glyph 
 
 ## Demo
 
-[Please see the demo](http://richardcornish.github.io/jQuery-Glyph/) to see these examples in action.
+[Please see the demo](http://richardcornish.github.io/jquery-glyph/) to see these examples in action.
 
     // Demo 1: Default entity (a black square)
     $('.article-1').glyph();

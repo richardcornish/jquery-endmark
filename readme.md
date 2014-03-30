@@ -26,6 +26,8 @@ Download and unzip the [ZIP archive file](https://github.com/richardcornish/jque
 
 `bower install git@github.com:richardcornish/jquery-glyph.git`
 
+Then in your HTML:
+
 1. Link to jQuery:
 
         <script src="/path/to/jquery.min.js"></script>

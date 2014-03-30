@@ -22,6 +22,10 @@ A lot of CMSs are ill equipped to handle the task, and rightfully so. The glyph 
 
 ## Installation
 
+Download and unzip the [ZIP archive file](https://github.com/richardcornish/jquery-glyph/archive/master.zip). Alternatively, if you're using the [Bower](http://bower.io/) package manager, you can install via the command line:
+
+`bower install git@github.com:richardcornish/jquery-glyph.git`
+
 1. Link to jQuery:
 
         <script src="/path/to/jquery.min.js"></script>
